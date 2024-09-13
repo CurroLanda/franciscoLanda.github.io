@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #343a40;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+}
