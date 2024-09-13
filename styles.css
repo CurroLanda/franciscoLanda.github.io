@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #343a40;
+    background-color: #003366; /* Navy/Dark Blue color */
 }
 
 .navbar {
@@ -17,10 +17,34 @@ header {
 }
 
 .carousel-inner img {
-    max-height: 400px;
-    object-fit: cover;
+    max-height: 300px;
+    width: auto;
+    margin: auto;
+}
+
+.carousel-custom {
+    position: relative;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    opacity: 0.7;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
 }
 
 footer {
-    background-color: #343a40;
+    background-color: #003366;
 }
