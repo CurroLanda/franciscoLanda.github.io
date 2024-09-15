@@ -16,30 +16,45 @@ header {
     color: #ffffff !important;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 .carousel-inner img {
     max-width: 200px; /* Adjust the width as needed */
     max-height: 150px; /* Adjust the height as needed */
     width: auto;
     height: auto;
     margin: auto;
-}
-
-.carousel-custom {
-    position: relative;
-}
-
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.8);
-    opacity: 0.7;
     transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: translateX(-15%);
+    opacity: 0.3;
+}
+
+.carousel-item-prev.carousel-item-left,
+.carousel-item-next.carousel-item-right {
+    transform: translateX(15%);
+    opacity: 0.3;
 }
 
 .carousel-item.active {
     transform: scale(1);
     opacity: 1;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .carousel-control-prev,
