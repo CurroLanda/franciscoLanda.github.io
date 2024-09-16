@@ -4,26 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francisco Landa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .carousel-custom img {
-            display: block;
-            margin: 0 auto;
-            max-height: 500px;
-            object-fit: cover;
-        }
-        .carousel-custom {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
             <a class="navbar-brand" href="#">My Portfolio</a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#bio">Bio</a>
@@ -46,27 +38,42 @@
         <h2 class="text-center">Bio</h2>
         <p>Hi, I'm Francisco, but everyone calls me Curro. I'm from the Canary Islands. I'm an outgoing person who loves traveling, sports, and data! 
             My passion led me to pursue a BSc in Data Science & Engineering at Universidad Carlos III de Madrid.</p>
-        
-        <!-- Fixed Carousel -->
-        <div id="bioCarousel" class="carousel slide carousel-custom" data-ride="carousel" data-interval="3000">
+        <div id="bioCarousel" class="carousel slide carousel-custom" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/foto1.JPG" class="d-block w-100" alt="Picture 1">
+                    <img src="images/foto1.JPG" class="d-block" alt="Picture 1" width="100%" height="auto">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/foto2.JPG" class="d-block w-100" alt="Picture 2">
+                    <img src="images/foto2.JPG" class="d-block" alt="Picture 2" width="100%" height="auto">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/foto3.JPG" class="d-block w-100" alt="Picture 3">
+                    <img src="images/foto3.JPG" class="d-block" alt="Picture 3" width="100%" height="auto">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/foto4.JPG" class="d-block w-100" alt="Picture 4">
+                    <img src="images/foto4.JPG" class="d-block" alt="Picture 4" width="100%" height="auto">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/foto5.JPG" class="d-block w-100" alt="Picture 5">
+                    <img src="images/foto5.JPG" class="d-block" alt="Picture 5" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/foto6.JPG" class="d-block" alt="Picture 6" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/foto7.JPG" class="d-block" alt="Picture 7" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/foto8.JPG" class="d-block" alt="Picture 8" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/foto9.JPG" class="d-block" alt="Picture 9" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/foto10.JPG" class="d-block" alt="Picture 10" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/foto11.JPG" class="d-block" alt="Picture 11" width="100%" height="auto">
                 </div>
             </div>
-            <!-- Carousel Controls -->
             <a class="carousel-control-prev" href="#bioCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -80,22 +87,33 @@
 
     <section id="studies" class="container mt-5">
         <h2 class="text-center">Studies</h2>
-        <p>I completed my high school education at IES Politécnico Las Palmas with an average score of 9.56. Afterward, I began studying Data Science at the Universidad de Las Palmas de Gran Canaria. However, I felt I needed a bigger challenge, which led me to move to Madrid and continue my studies at Universidad Carlos III de Madrid...</p>
+        <p>I completed my high school education at IES Politécnico Las Palmas with an average score of 9.56. Afterward, I began studying Data Science at the Universidad de Las Palmas de Gran Canaria. However, I felt I needed a bigger challenge, which led me to move to Madrid and continue my studies at Universidad Carlos III de Madrid. Over the years, I’ve learned programming languages such as Python, R, and Java, along with various libraries and packages. I have also developed a strong understanding of Machine Learning, Deep Learning, Data Cleaning, Preprocessing, and Data Visualization techniques.
+
+        I am passionate about Cybersecurity, Data Science, and Machine/Deep Learning, and I’m excited to further develop my career in these fields.</p>
     </section>
 
     <section id="repositories" class="container mt-5">
         <h2 class="text-center">My GitHub Repositories</h2>
+        <p>Here are some personal projects I’ve worked on during my studies. They involve Python, Scala, R, Web Programming, and even a fully functional Mobile App developed on Google Cloud Platform. These projects were successfully completed thanks to the hard work of my team members and the support of my instructors. Along with technical skills, these projects fostered soft skills like communication, teamwork, and team-organization.</p>
         <ul class="list-unstyled">
-            <li><a href="https://github.com/CurroLanda/Weather_Api_V2" target="_blank">🌦️ Weather API</a></li>
-            <li><a href="https://github.com/CurroLanda/FSI_TC_Kiara-Francisco" target="_blank">🛰️ Ships & Planes Detection from Satellite Images</a></li>
-            <li><a href="https://github.com/CurroLanda/Image-Filtering" target="_blank">🖼️ Image Filtering with Python</a></li>
+            <li><a href="https://github.com/CurroLanda/Weather_Api_V2" target="_blank" rel="noopener noreferrer">🌦️ Weather API</a></li>
+            <li><a href="https://github.com/CurroLanda/FSI_TC_Kiara-Francisco" target="_blank" rel="noopener noreferrer">🛰️ Ships & Planes Detection from Satellite Images</a></li>
+            <li><a href="https://github.com/CurroLanda/Image-Filtering" target="_blank" rel="noopener noreferrer">🖼️ Image Filtering with Python</a></li>
+            <li><a href="https://github.com/CurroLanda/Advanced-Machine-Learning" target="_blank" rel="noopener noreferrer">🤖 Advanced Machine Learning</a></li>
+            <li><a href="https://github.com/CurroLanda/Spark" target="_blank" rel="noopener noreferrer">⚡ PageRank Algorithm with Spark</a></li>
+            <li><a href="https://github.com/CurroLanda/Neuronal-Networks" target="_blank" rel="noopener noreferrer">🧠 Neuronal Networks</a></li>
+            <li><a href="https://github.com/CurroLanda/R-Projects" target="_blank" rel="noopener noreferrer">📊 R Projects</a></li>
+            <li><a href="https://github.com/CurroLanda/CookingApp" target="_blank" rel="noopener noreferrer">🍳 Cooking Web Application</a></li>
+            <li><a href="https://github.com/CurroLanda/mobileapp-farmspot" target="_blank" rel="noopener noreferrer">📱 Mobile Application</a></li>
         </ul>
     </section>
 
     <section id="contact" class="container mt-5">
         <h2 class="text-center">Contact Information</h2>
+        <p class="text-center">You can reach me via the following channels:</p>
         <ul class="list-unstyled text-center">
             <li>Email: <a href="mailto:100483174@alumnos.uc3m.es">100483174@alumnos.uc3m.es</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
             <li>Phone: +34 674 93 83 88</li>
         </ul>
     </section>
@@ -105,7 +123,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
