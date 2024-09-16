@@ -13,7 +13,7 @@ header {
 }
 
 .nav-link {
-    color: #ffffff ;
+    color: #ffffff;
 }
 
 .carousel-inner {
@@ -25,17 +25,22 @@ header {
 .carousel-item {
     display: inline-block;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0.5; 
+    opacity: 0.5;
+    /* Ensures each carousel item has the same size and centers content */
+    width: 100%;
+    text-align: center;
 }
 
 .carousel-item img {
-    max-height: 2000px;
+    width: 100%; /* Ensures the image takes up the full width of the carousel item */
+    height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: center; /* Centers the image within its container */
     transition: transform 0.5s ease;
 }
 
 .carousel-item.active img {
     transform: scale(1.3); 
-    max-height: 250px;
     opacity: 1;
 }
 
@@ -46,7 +51,7 @@ header {
 
 .carousel-item-next img,
 .carousel-item-prev img {
-    transform: scale(1); 
+    transform: scale(1);
 }
 
 .carousel-control-prev,
