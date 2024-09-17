@@ -29,25 +29,60 @@
         .carousel-control-next {
             filter: invert(1);
         }
+
         .carousel-item img {
-            width: 100%; /* Ensures the image takes up the full width */
-            height: auto; /* Maintains the aspect ratio */
-            object-fit: contain; /* Ensures the full image is shown without cropping */
-            object-position: center; /* Centers the image within the container */
+            width: 100%; 
+            height: auto;
+            object-fit: contain; 
+            object-position: center; 
         }
-        
-        
+
         .carousel-item {
             display: flex;
-            justify-content: center; /* Centers the image horizontally */
-            align-items: center; /* Centers the image vertically */
-            height: 500px; /* Set the desired height */
+            justify-content: center; 
+            align-items: center;
+            height: 500px; 
         }
 
         footer {
             background-color: #003366;
             color: white;
             padding: 1rem 0;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            width: 5%;
+            height: 5%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1); 
+            width: 50px; 
+            height: 50px;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.7); 
+        }
+
+        .carousel-control-prev {
+            left: 10px; 
+        }
+
+        .carousel-control-next {
+            right: 10px; 
         }
     </style>
 </head>
@@ -144,29 +179,22 @@
             <li><a href="https://github.com/CurroLanda/Image-Filtering" target="_blank" rel="noopener noreferrer">🖼️ Image Filtering with Python</a></li>
             <li><a href="https://github.com/CurroLanda/Advanced-Machine-Learning" target="_blank" rel="noopener noreferrer">🤖 Advanced Machine Learning</a></li>
             <li><a href="https://github.com/CurroLanda/Spark" target="_blank" rel="noopener noreferrer">⚡ PageRank Algorithm with Spark</a></li>
-            <li><a href="https://github.com/CurroLanda/Neuronal-Networks" target="_blank" rel="noopener noreferrer">🧠 Neuronal Networks</a></li>
-            <li><a href="https://github.com/CurroLanda/R-Projects" target="_blank" rel="noopener noreferrer">📊 R Projects</a></li>
-            <li><a href="https://github.com/CurroLanda/CookingApp" target="_blank" rel="noopener noreferrer">🍳 Cooking Web Application</a></li>
-            <li><a href="https://github.com/CurroLanda/mobileapp-farmspot" target="_blank" rel="noopener noreferrer">📱 Mobile Application</a></li>
+            <li><a href="https://github.com/CurroLanda/Neuronal-Networks" target="_blank" rel="noopener noreferrer">🧠 Neural Networks from Scratch</a></li>
         </ul>
     </section>
 
-    <section id="contact" class="container mt-5">
-        <h2 class="text-center">Contact Information</h2>
-        <p class="text-center">You can reach me via the following channels:</p>
-        <ul class="list-unstyled text-center">
-            <li>Email: <a href="mailto:100483174@alumnos.uc3m.es">100483174@alumnos.uc3m.es</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/francisco-landa" target="_blank" rel="noopener noreferrer">Francisco Landa</a></li>
-            <li>GitHub: <a href="https://github.com/CurroLanda" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
-        </ul>
-    </section>
-
-    <footer class="bg-dark-blue text-white text-center py-3 mt-5">
-        <p>&copy; 2024 Francisco Landa</p>
+    <footer id="contact" class="text-center">
+        <p>📧 Email: 100483174@alumnos.uc3m.es</p>
+        <p>📱 Phone: +34 674 93 83 88</p>
+        <div>
+            <a href="https://github.com/CurroLanda" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
