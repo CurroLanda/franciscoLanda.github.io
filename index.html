@@ -25,23 +25,23 @@
             color: #ffffff;
         }
 
-        .carousel-inner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 500px;
-        }
-
-        .carousel-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Ensures the image scales to fit while maintaining aspect ratio */
-            object-position: center; /* Keeps the image centered */
-        }
-
         .carousel-control-prev,
         .carousel-control-next {
             filter: invert(1);
+        }
+        .carousel-item img {
+            width: 100%; /* Ensures the image takes up the full width */
+            height: auto; /* Maintains the aspect ratio */
+            object-fit: contain; /* Ensures the full image is shown without cropping */
+            object-position: center; /* Centers the image within the container */
+        }
+        
+        
+        .carousel-item {
+            display: flex;
+            justify-content: center; /* Centers the image horizontally */
+            align-items: center; /* Centers the image vertically */
+            height: 500px; /* Set the desired height */
         }
 
         footer {
