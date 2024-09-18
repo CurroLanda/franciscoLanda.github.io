@@ -16,49 +16,29 @@ header {
     color: #ffffff;
 }
 
-.carousel-inner {
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
+    overflow: hidden;
 }
 
-.carousel-item {
-    display: inline-block;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0.5;
-    /* Ensures each carousel item has the same size and centers content */
+.slideshow-container img {
     width: 100%;
-    text-align: center;
+    max-height: 500px;
+    object-fit: contain;
 }
 
-.carousel-item img {
-    width: 100%; /* Ensures the image takes up the full width of the carousel item */
-    height: 500px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    object-position: center; /* Centers the image within its container */
-    transition: transform 0.5s ease;
-}
-
-.carousel-item.active img {
-    transform: scale(1.3); 
-    opacity: 1;
-}
-
-.carousel-item-next,
-.carousel-item-prev {
-    opacity: 0.9;
-}
-
-.carousel-item-next img,
-.carousel-item-prev img {
-    transform: scale(1);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    filter: invert(1);
+.mySlides {
+    display: none;
 }
 
 footer {
     background-color: #003366;
+    color: white;
+    padding: 1rem 0;
 }
